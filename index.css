@@ -76,17 +76,19 @@ canvas {
         background-position: top; /* 調整圖片在容器中的位置 */
         text-align: center;
         display: none;
-        animation: fadeIn 0.3s ease-in-out; /* 設定淡入動畫效果 */
+        animation: slidein 0.2s ease-in-out; /* 設定淡入動畫效果 */
         
     }
 
     @keyframes slidein {
         from {
-          transform: translateY(0%);
+          /*transform: translateY(0%);*/
+          margin-top: 120px;
         }
       
         to {
-          transform: translateY(80%);
+          /*transform: translateY(80%);*/
+          margin-top: 80px;
         }
       }
 
@@ -163,11 +165,13 @@ canvas {
 
     @keyframes slidein {
         from {
-          transform: translateY(0%);
+          /*transform: translateY(0%);*/
+          margin-top: 120px;
         }
       
         to {
-          transform: translateY(80%);
+          /*transform: translateY(80%);*/
+          margin-top: 80px;
         }
       }
 
