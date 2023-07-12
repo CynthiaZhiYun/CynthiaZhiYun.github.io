@@ -70,7 +70,7 @@ canvas {
         box-shadow: 0 2px 6px #ccc;
         border-radius: 20px;
         height: 30%;
-        width: 30%;
+        width: 70%;
         background-image: url('./image/popupTip.png');
         background-size: cover; /* 根據需要調整圖片大小以填滿容器 */
         background-position: top; /* 調整圖片在容器中的位置 */
@@ -154,7 +154,7 @@ canvas {
         border-radius: 20px;
         height: 30%;
         width: 30%;
-        background-image: url('./image/popupTip.png');
+        background-image: url('./image/popupTip.jpg');
         background-size: cover; /* 根據需要調整圖片大小以填滿容器 */
         background-position: top; /* 調整圖片在容器中的位置 */
         text-align: center;
