@@ -49,35 +49,12 @@ background.onclick = function(e) {
     }
 };
 
-//鍵盤事件處理 //onkeyup指按键的抬起事件
-document.onkeyup = function(event) {
-    if (isFinish) {
-        return;
-    }
+////////////////////////////////////////////////
 
-    var position = -1;
-    if (event.keyCode == '37') {  // 左
-        position = rightOfPosition(background.emptyPosition);
-    } else if (event.keyCode == '38') { // 上
-        position = bottomOfPosition(background.emptyPosition);
-    } else if (event.keyCode == '39') { // 右
-        position = leftOfPosition(background.emptyPosition);
-    } else if (event.keyCode == '40') { // 下
-        position = topOfPosition(background.emptyPosition);
-    } else if (event.keyCode == '65') { // A
-        position = rightOfPosition(background.emptyPosition);
-    } else if (event.keyCode == '87') { // W
-        position = bottomOfPosition(background.emptyPosition);
-    } else if (event.keyCode == '68') { // D
-        position = leftOfPosition(background.emptyPosition);
-    } else if (event.keyCode == '83') { // S
-        position = topOfPosition(background.emptyPosition);
-    }
-
-    //觸控變數
-    let touchStartX = 0;
-    let touchStartY = 0;
-    const swipeThreshold = 20; // 調整數值以適應滑動敏感度
+//觸控變數
+let touchStartX = 0;
+let touchStartY = 0;
+const swipeThreshold = 20; // 調整數值以適應滑動敏感度
 
 //觸控開始
 document.addEventListener('touchstart', function(event) {
@@ -119,6 +96,32 @@ document.addEventListener('touchend', function(event) {
         }
     }
 });
+///////////////////////////////////////////////////
+//鍵盤事件處理 //onkeyup指按键的抬起事件
+document.onkeyup = function(event) {
+    if (isFinish) {
+        return;
+    }
+
+    var position = -1;
+    if (event.keyCode == '37' || deltaX < 0 ) {  // 左
+        position = rightOfPosition(background.emptyPosition);
+    } else if (event.keyCode == '38' || deltaY > 0 ) { // 上
+        position = bottomOfPosition(background.emptyPosition);
+    } else if (event.keyCode == '39' || deltaX > 0) { // 右
+        position = leftOfPosition(background.emptyPosition);
+    } else if (event.keyCode == '40' || deltaY < 0) { // 下
+        position = topOfPosition(background.emptyPosition);
+    } else if (event.keyCode == '65' || deltaX < 0 ) { // A
+        position = rightOfPosition(background.emptyPosition);
+    } else if (event.keyCode == '87' || deltaY > 0) { // W
+        position = bottomOfPosition(background.emptyPosition);
+    } else if (event.keyCode == '68' || deltaX > 0 ) { // D
+        position = leftOfPosition(background.emptyPosition);
+    } else if (event.keyCode == '83' || deltaY < 0 ) { // S
+        position = topOfPosition(background.emptyPosition);
+    }
+
 
 
     //判斷是否移動符合範圍
