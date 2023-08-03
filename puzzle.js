@@ -75,9 +75,9 @@ document.onkeyup = function(event) {
     }
 
     //觸控變數
-let touchStartX = 0;
-let touchStartY = 0;
-const swipeThreshold = 80; // 調整數值以適應滑動敏感度
+    let touchStartX = 0;
+    let touchStartY = 0;
+    const swipeThreshold = 20; // 調整數值以適應滑動敏感度
 
 //觸控開始
 document.addEventListener('touchstart', function(event) {
