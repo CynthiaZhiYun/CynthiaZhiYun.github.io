@@ -1,43 +1,40 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>專題小遊戲-滑塊拼圖</title>
-        <link rel="stylesheet" type="text/css" href="./index.css"/>
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>小朋友下樓梯</title>
+    <script src="https://cdn.jsdelivr.net/phaser/2.6.2/phaser.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="./index.css"/>
+</head>
 
-    <body>
-        
-        <div id="container">
-            <div id="container3"></div>
+<body>
+	
+    <div id="container">
 
-            <div id="container1">
-                <p id="countdown">03:00</p>
-                <canvas id="background" width="399px" height="399px"></canvas>
-            </div>
+		<div id="container3"> </div>
 
-            
-            <div id="container2">
-                <div class="image"></div>
-                <!-- <img id="ad" src="./image/下載.jpg"/> -->
-            </div>
-
-            <script src="./puzzle.js"></script>
-            <!--
-            <div id="popup" style="display: none;">
-                <h2>遊戲結束</h2>
-                <p>兩秒後將自動跳轉至問卷。</p>
-            </div>
-            -->
-            <dialog  id="myDialog">
-                <b>
-                    <br><br><br>
-                    <h2>遊戲結束！</h2>
-                    <h3>兩秒後即將跳轉至問卷！</h3>
-                </b>
-            </dialog>
-
+        <div id="container1">
+            <script  src="./index.js"></script> 
         </div>
+        
+		<div id="container2">
+			<div class="image"></div>
+		</div>
+        
+			
+		
+		
+		<dialog  id="myDialog">
+			<b>
+				<br><br><br>
+				<h2>遊戲結束！</h2>
+				<h3>兩秒後即將跳轉至問卷！</h3>
+			</b>
+		</dialog>
+    </div> 
 
-    </body>
+</body>
+
 </html>
