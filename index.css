@@ -4,14 +4,18 @@ body, html {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-  }
+}
 
 html{
-    background-color: rgb(0, 0, 0);
+    background-color: black;
 }
 
 body{
     background-color: white;
+}
+
+canvas {
+    background-color: black;
 }
 
 @keyframes slidein {
@@ -30,7 +34,7 @@ dialog::backdrop {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-/*手機和平板*/
+/*手機與平板*/
 @media (max-width: 840px) {
 
     body{
@@ -57,6 +61,11 @@ dialog::backdrop {
         background-color: white;
     }
     
+    #countdown{
+        font-size: small;
+        margin: 0; 
+    }
+    
     canvas{
         max-width: 100%;
     }
@@ -64,28 +73,28 @@ dialog::backdrop {
     #container2, #container3{
         flex-grow: 1;
         width: 100vw;
-        padding-bottom: 10px;
+        padding-top: 10px;
         display: flex;
         justify-content: center;
     }
 
     .image {
-        background-image: url("./assets/ad.jpg");
+        background-image: url("./image/ad.jpg");
         background-size:100% auto;
         background-repeat: no-repeat;
-        background-position: center bottom  ;
+        background-position: center top  ;
         width: 100%;
         height: 100%;
         max-width: 399px;
       }
-    
+
       dialog {
         border: none;
         box-shadow: 0 2px 6px #ccc;
         border-radius: 20px;
         height: 30%;
         width: 70%;
-        background-image: url('./assets/popupTip.png');
+        background-image: url('./image/popupTip.png');
         background-size: cover; /* 根據需要調整圖片大小以填滿容器 */
         background-position: top; /* 調整圖片在容器中的位置 */
         text-align: center;
@@ -97,7 +106,7 @@ dialog::backdrop {
 
 /*電腦*/
 @media (min-width: 841px){
-
+    
     #container {
         display: flex;
         flex-direction: column-reverse;
@@ -118,22 +127,29 @@ dialog::backdrop {
         position: relative;
     }
 
+    #countdown{
+        font-size: small;
+        margin: 0; 
+        position: relative;
+        top:1px;
+    }
+
     #container2, #container3{
         flex-grow: 1;
         width: 100%;
-        padding-bottom: 10px;
+        padding-top: 10px;
         display: flex;
         justify-content: center;
-        align-items:flex-end;
+        align-items:flex-start;
     }
 
     .image {
+        background-image: url("./image/ad.jpg");
+        background-size:100% 100%;
+        background-repeat: no-repeat;
+        background-position: center top  ;
         width: 100%;
         height: 100%;
-        background-image: url("./assets/ad.jpg");
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        background-position: center bottom  ;
         max-height: 100px;
     }
     
@@ -143,7 +159,7 @@ dialog::backdrop {
         border-radius: 20px;
         height: 30%;
         width: 30%;
-        background-image: url('./assets/popupTip.png');
+        background-image: url('./image/popupTip.png');
         background-size: cover; /* 根據需要調整圖片大小以填滿容器 */
         background-position: top; /* 調整圖片在容器中的位置 */
         text-align: center;
@@ -152,3 +168,7 @@ dialog::backdrop {
         
     }
 }
+
+
+
+
