@@ -104,7 +104,7 @@ function handleTouchEnd(pointer) {
 */
 //觸控變數
 let touchStartX = 0;
-const swipeThreshold = 20; // 調整數值以適應滑動敏感度
+const swipeThreshold = 80; // 調整數值以適應滑動敏感度
 
 //觸控開始
 function handleTouchStart(pointer) {
