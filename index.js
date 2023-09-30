@@ -220,7 +220,7 @@ function createTextsBoard () {
     var style = {fill: '#ff0000', fontSize: '20px'}
     text1 = game.add.text(10, 10, '', style);
     text2 = game.add.text(345, 10, '', style);
-    text3 = game.add.text(78, 180, '"Enter" or touch the screen to restart', style);
+    text3 = game.add.text(20, 180, '"Enter" or touch the screen to restart', style);
     text3.visible = false;
 }
 
