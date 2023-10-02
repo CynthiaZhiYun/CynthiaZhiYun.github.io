@@ -285,8 +285,8 @@ function updateTextsBoard () {
         status = 'finish';
         showMyDialog(); // 彈出 <dialog>
         setTimeout(function() {
-            window.location.href = 'https://www.surveycake.com/s/ZPpRK';
-        }, 2000);
+            window.location.href = 'https://www.surveycake.com/s/PLKm2';
+        }, 10000); // 10 秒後彈出視窗
     }
 
     var minutes = Math.floor(remainingSeconds / 60);
@@ -309,8 +309,11 @@ function effect(player, platform) {
     }
     if(platform.key == 'nails_new') {
         nailsEffect(player, platform);
-    }
+    }/*
     if(platform.key == 'normal') {
+        basicEffect(player, platform);
+    }*/
+    if(platform.key == 'grass') {
         basicEffect(player, platform);
     }
     if(platform.key == 'fake') {
