@@ -22,7 +22,7 @@ var text3;
 var distance = 0;
 var status = 'running';
 
-var countdownSeconds = 180; //倒數計時的秒數
+var countdownSeconds = 120; //倒數計時的秒數
 var startTime = Date.now();
 var countdownInterval = null;
 var remainingSeconds = null;
